@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Smart Market</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <h1>🛒 Smart Market</h1>
+
+        <div class="input-container">
+            <input type="text" id="urunAdi" placeholder="Ürün adı girin"/>
+            <input type="number" id="urunFiyat" placeholder="Fiyat (₺)"/>
+            <button id="ekleBtn">Ekle</button>
+        </div>
+        <div id="istatistikler">
+  <p id="ortalama">Ortalama: 0₺</p>
+  <p id="maxUrun">En pahalı: - </p>
+</div>
+<div class="filtre">
+  <input type="number" id="minFiyat" placeholder="Min fiyat" />
+  <button id="filtreBtn">Filtrele</button>
+  <button id="temizleFiltre">Temizle</button>
+</div>
+<div id="urunSayisi">Toplam ürün: 0</div>
+<p id="bosMesaj" style="display:none; color:gray;">Henüz ürün eklenmedi 💤</p>
+<div id="istatistikler">
+  <p id="ortalama">Ortalama: 0₺</p>
+  <p id="maxUrun">En pahalı: - </p>
+</div>
+
+<div id="urunSayisi">Toplam ürün: 0</div>
+<p id="bosMesaj" style="display:none; color:gray;">Henüz ürün eklenmedi 💤</p>
+
+
+        <ul id="urunListesi"></ul>
+
+        <div id="toplam">Toplam: 0₺</div>
+
+        <button id="darkModeBtn">🌙 Karanlık Mod</button>
+
+        <script src="app.js"></script>
+    </body>
+</html>
